@@ -1,3 +1,5 @@
+/***** BASE STYLES ******/
+
 *{
 	box-sizing: border-box;
 }
@@ -6,80 +8,96 @@ body{
 	
 	margin: 0;
 	padding: 0;
+	font-size: 120%;
 }
-
 h1{
 	text-align: center;
-	margin-top:10%;
+	margin-top:5%;
 	margin-bottom: 5%;
+	font-size: 195%;
 }
 
-.row{
-	width:100%;
-
-}
-
-.col-lg-4{
-	width: 33.33%;
-	
-	float: left;
+.col-lg-4{		/* CONTAINER FOR EACH GRID */
 	padding: 20px;
-
 }
 
-#chicken{
-	position: absolute;
-	left: 264px;
-	bottom: 166px;
-	border: 2px black solid;
-	width: 120px;
-	padding:5px;
-	height: auto;
+.title{ 	/* TITLE FOR EACH MENU ITEM (CHICKEN, BEEF AND SUSHI)*/
+	position: relative;
+	top:0px;
+	left: 65%;
+	width: 35%;
+	margin: 0px;
+	font-size: 145%;
 	text-align: center;
+	border: 1px black solid;
+}
+
+#title-chicken{		/* BACKGROUND OF EACH TITLE (CHICKEN, BEEF AND SUSHI) */
+	
 	background-color: #cd7caa;
-	font-size: 18px;
 }
 
-#beef{
-	position: absolute;
-	left: 263px;
-	bottom: 166px;
-	border: 2px black solid;
-	width: 120px;
-	padding:5px;
-	height: auto;
-	text-align: center;
-	font-size: 18px;
+#title-beef{
 	background-color: red;
 	color: #fff;
 }
 
-#sushi{
-	position: absolute;
-	left: 264px;
-	bottom: 166px;
-	border: 2px black solid;
-	width: 120px;
-	padding:5px;
-	height: auto;
-	text-align: center;
-	font-size: 18px;
+#title-sushi{
 	background-color: #d4c175;
-	color: #000;
 }
 
-#content {
-	position:relative;
-	border: 2px black solid;
-	padding-top: 40px;
-	background-color: #ccc
-}
-
-
-p{
+.description{		/* PARAGRAPH TEXT */
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
-	border: 1px solid blue;
-	background-color: yellow;
+}
+
+
+.prod-sect{  	/* CONTENT WARPPER */
+	border: 1px black solid; 
+	background-color: #ccc;     
+
+}
+
+
+
+
+
+/********* MEDIA QUERY ***********/
+
+
+/********* DESKTOP **********/
+
+@media (min-width: 992px){
+	.col-lg-4{
+		width: 33.33%;
+		float: left;
+		
+	}
+}
+
+/********* TABLET **********/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	.col-lg-4 {
+		width: 50%;
+		float: left;
+
+	}
+
+	#row-3{
+		width: 100%;
+	}
+}
+
+/********* MOBILE **********/
+
+@media (max-width: 767px){
+
+	.col-lg-4 {
+		width: 100%;
+		float: left;
+
+	}
 }
