@@ -1,66 +1,73 @@
 body{
 	font-size: 16px;
 	color: #fff;
-	background-color: #61122f;
-	font-family: 'Oxygen', sans-serif;
+	background-color: #BC6BE8;
 }
 
 /* Header */
 #header-nav{
-	background-color: #F6B319;
+	background-color: green;
 	border-radius: 0;
 	border: 0;
-}
-
-#logo-img{
-	background: url('../img/logo.png') no-repeat;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
-}
-
-.navbar-brand{
-	padding-top: 25px;
+	height: 70px;
 }
 
 .navbar-brand h1{
-	font-family: 'lora', serif;
-	color: #557c3e;
-	font-size: 1.5em;
-	text-transform: uppercase;
+	font-family: times;
+	color: orange;
+	font-size: 2em;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
+	text-shadow: 1px 1px 1px #000;
 	margin-top: 0;
 	margin-bottom: 0;
-	line-height: .75;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none;
 }
 
-.navbar-brand p{ /* Kocher cert */
-	color: #000;
-	text-transform: uppercase;
-	font-size: .7em;
-	margin-top: 15px;
+.navbar-default .navbar-toggle {
+	border-color: orange;
 }
-.navbar-brand p span{ /* Star-K */
-	vertical-align: middle;
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: orange;
 }
+
 
 #nav-list{
 	margin-top: 10px;
 }
 
 #nav-list a{
-	color: #951c49;
+	color: #fff;
 	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	background-color: orange;
 }
 
 #nav-list a:hover{
 	background: #e7e7e7;
+	color: #000;
+	text-shadow: none;
 }
+
+.container .row{
+	background-color: green;
+}
+
+section p{
+	text-align: justify;
+}
+/*
+
+<div id="main-content" class="container">
+		<h1 id="our-menu" class="text-center">Our Menu</h1>
+
+		<section class="row">
+			<div class="col-xs-12 col-md-12">
+
+
+
 
 #nav-list a span{
 font-size: 1.8em;
@@ -70,11 +77,11 @@ font-size: 1.8em;
 	margin-top: 5px;
 }
 
-#phone a{ /* Phone number */
+#phone a{ /* Phone number 
 	
-}
+}*/
 
-#phone div{ /* We deliver */
+/*#phone div{  We deliver 
 	color: #557c3e;
 	text-align: right;
 	padding-right: 15px;
@@ -87,7 +94,7 @@ font-size: 1.8em;
 .navbar-header button.navbar-toggle{
 	clear: both;
 	margin-top: -30px;
-}
+}*/
 /* End Header */
 
 /* Footer */
