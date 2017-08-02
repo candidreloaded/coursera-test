@@ -73,7 +73,6 @@ WARNING!!! WARNING!!!
       console.log(helloSpeaker.speak(names[i]));
     }
   }
-
 })(window);
 
 
